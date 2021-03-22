@@ -13,25 +13,22 @@ var arrayMail = ['ciao','nico.berrettoni@gmail.com', 'marco.rossi@outlook.com', 
 //console.log(arrayMail);
 
 //logica sul controllo d'accesso
+
 var mailInserita = false;
 
-for (var i = 0; i < arrayMail.length; i++){
-
+for ( var i = 0; i < arrayMail.length; i++){
     var thisMail = arrayMail[i];
-    //console.log(thisMail);
-    
-    if(thisMail == arrayMail){
+
+    if(thisMail == mailUtente){
         mailInserita = true;
         console.log(mailInserita);
     }
-
-    if(mailInserita==true){
-        alert('Utente trovato')
-    }else{
-        alert('Utente non trovato')
-    }
-
 }
 
-
 //Stampa messaggio appropriato in base a esito controllo
+
+if(mailInserita = true){
+    alert('Mail trovata!');
+}else{
+    alert('Mail non trovata!');
+}
